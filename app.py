@@ -33,7 +33,6 @@ generations = st.sidebar.number_input("Generations", min_value=10, max_value=100
 population_size = st.sidebar.number_input("Population Size", min_value=10, max_value=500, value=50, step=10)
 seed = st.sidebar.number_input("Random Seed", min_value=0, max_value=999999, value=42, step=1)
 
-st.caption("The assignment sheet gives a default mutation rate of 0.2 on page 1, but states 0.01–0.05 on page 2. This interface keeps 0.2 as the default; use 0.01–0.05 for the three comparison trials unless your lecturer clarifies otherwise.")
 
 if st.button("Generate Schedule", type="primary"):
     schedule, total_rating, history = run_genetic_algorithm(
