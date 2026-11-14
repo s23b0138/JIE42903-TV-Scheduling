@@ -62,7 +62,6 @@ if "main_result" in st.session_state:
 
 st.divider()
 st.header("Three Experimental Trials")
-st.write("Run three configurations using the same dataset, generation count, population size and seed for a fairer comparison.")
 
 trial_defaults = [
     ("Trial 1", 0.8, 0.02),
